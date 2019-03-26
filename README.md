@@ -1,2 +1,0 @@
-# HangmanGame.Challenge
-
