@@ -51,6 +51,7 @@
 		DCC9465B2249490500097BBA /* step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step1.png; sourceTree = "<group>"; };
 		DCC9465C2249490500097BBA /* step2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step2.png; sourceTree = "<group>"; };
 		DCC9465D2249490500097BBA /* step6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step6.png; sourceTree = "<group>"; };
+		DCC94684224ACA3D00097BBA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DCF0DD70223E580200D488D1 /* LabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +78,7 @@
 		DCC780672239B04600B88602 = {
 			isa = PBXGroup;
 			children = (
+				DCC94684224ACA3D00097BBA /* README.md */,
 				DCC780722239B04600B88602 /* HangmanChallenge */,
 				DCC780712239B04600B88602 /* Products */,
 			);
