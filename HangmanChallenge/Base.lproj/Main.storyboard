@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HangmanChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hangman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cf-t0-LBE">
+                                <rect key="frame" x="65" y="23" width="245" height="71"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="65"/>
+                                <color key="textColor" name="Accent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ALL_T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lwb-rJ-dnZ">
+                                <rect key="frame" x="20" y="334" width="335" height="89"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="65"/>
+                                <color key="textColor" name="Accent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2sj-kY-wjD">
+                                <rect key="frame" x="10" y="443" width="355" height="219"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ozq-aW-myJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="47.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="yhV-ME-TVm">
+                                        <rect key="frame" x="0.0" y="57.5" width="355" height="47"/>
+                                        <viewLayoutGuide key="safeArea" id="Ehs-MQ-DE9"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="xtz-nC-GS6">
+                                        <rect key="frame" x="0.0" y="114.5" width="355" height="47.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="iYE-EV-fHM">
+                                        <rect key="frame" x="0.0" y="172" width="355" height="47"/>
+                                        <viewLayoutGuide key="safeArea" id="n13-lI-NCJ"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="u58-Zo-M3h">
+                                <rect key="frame" x="87.5" y="119" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GGd-ee-yWC"/>
+                                    <constraint firstAttribute="width" secondItem="u58-Zo-M3h" secondAttribute="height" multiplier="1:1" id="eg6-N3-yf6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="ThemeBackground"/>
+                        <constraints>
+                            <constraint firstItem="2sj-kY-wjD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="3GI-X2-zTw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2sj-kY-wjD" secondAttribute="trailing" constant="10" id="8Yf-xg-GPV"/>
+                            <constraint firstItem="Lwb-rJ-dnZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="45" id="BtZ-Rn-3Mx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lwb-rJ-dnZ" secondAttribute="trailing" constant="20" id="ESo-cU-b28"/>
+                            <constraint firstItem="0cf-t0-LBE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="I88-rr-BDw"/>
+                            <constraint firstItem="Lwb-rJ-dnZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nd7-l1-INe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2sj-kY-wjD" secondAttribute="bottom" constant="5" id="XeV-vn-PEN"/>
+                            <constraint firstItem="0cf-t0-LBE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zml-OF-dhm"/>
+                            <constraint firstItem="u58-Zo-M3h" firstAttribute="top" secondItem="0cf-t0-LBE" secondAttribute="bottom" constant="25" id="bFi-Oi-mrV"/>
+                            <constraint firstItem="u58-Zo-M3h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q49-gO-wN3"/>
+                            <constraint firstItem="2sj-kY-wjD" firstAttribute="top" secondItem="Lwb-rJ-dnZ" secondAttribute="bottom" constant="20" id="vHB-QU-XIk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstButtonStack" destination="ozq-aW-myJ" id="VFk-HO-57K"/>
+                        <outlet property="fourthButtonStack" destination="iYE-EV-fHM" id="klt-nH-IsV"/>
+                        <outlet property="guessLabel" destination="Lwb-rJ-dnZ" id="jJN-Ju-7y5"/>
+                        <outlet property="hangmanLabel" destination="0cf-t0-LBE" id="vlB-xh-WLh"/>
+                        <outlet property="hangmanViewContainer" destination="u58-Zo-M3h" id="cSF-8Z-9nc"/>
+                        <outlet property="secondButtonStack" destination="yhV-ME-TVm" id="3E1-LF-9KK"/>
+                        <outlet property="thirdButtonStack" destination="xtz-nC-GS6" id="G2E-Ky-4n7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Accent">
+            <color red="1" green="0.42745098039215684" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeBackground">
+            <color red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
