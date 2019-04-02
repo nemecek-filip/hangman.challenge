@@ -17,7 +17,3 @@ protocol HangmanGameDelegate: class {
     func hangmanGame(game: HangmanGame, didEnded result: HangmaGameResult)
     func hangmanGame(game: HangmanGame, didUpdateGuessText text: String)
 }
-
-protocol HangmanGameRenderDelegate: class {
-    //func hangmanGameRender(game: HangmanGame, didUpdate)
-}

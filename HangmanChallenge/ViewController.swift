@@ -20,10 +20,6 @@ class ViewController: UIViewController, HangmanGameDelegate {
     @IBOutlet var thirdButtonStack: UIStackView!
     @IBOutlet var fourthButtonStack: UIStackView!
     
-    let backgroundColor = UIColor(named: "BackgroundColor")
-    let complementaryColor = UIColor(named: "Complementary")
-    let accentColor = UIColor(named: "Accent")
-    
     var buttonsAnimators = [UIViewPropertyAnimator]()
     
     var game: HangmanGame!
@@ -130,7 +126,7 @@ class ViewController: UIViewController, HangmanGameDelegate {
 //        }
         
 //        for i in 13..<20 {
-//            thirdButtonStuck.addArrangedSubview(createLetterButton(letter: letters[i]))
+//            thirdButtonStack.addArrangedSubview(createLetterButton(letter: letters[i]))
 //        }
 //
 //        for i in 20..<26 {
@@ -151,11 +147,11 @@ class ViewController: UIViewController, HangmanGameDelegate {
     
     private func createLetterButton(letter: Character) -> RoundedButton {
         let button = RoundedButton()
-        button.backgroundColor = accentColor
+        button.backgroundColor = UIColor.accent
         button.addTarget(self, action: #selector(letterButtonTapped), for: .touchUpInside)
         
         button.widthAnchor.constraint(equalTo: button.heightAnchor, multiplier: 1.0).isActive = true
-        button.setTitleColor(backgroundColor, for: .normal)
+        button.setTitleColor(UIColor.background, for: .normal)
         button.setTitle(String(letter), for: .normal)
         
         button.layer.opacity = 0.1

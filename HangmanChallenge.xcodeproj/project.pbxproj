@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC30455622427132007DC727 /* HangmanGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC30455522427132007DC727 /* HangmanGame.swift */; };
+		DC32E47D22538E6C002B70FF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32E47C22538E6C002B70FF /* Colors.swift */; };
 		DC904D7F22481545004A9DA9 /* CharacterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC904D7E22481545004A9DA9 /* CharacterExt.swift */; };
 		DC904D8122481638004A9DA9 /* ViewControllerAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC904D8022481638004A9DA9 /* ViewControllerAnimations.swift */; };
 		DC904D84224816D6004A9DA9 /* HangmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC904D83224816D6004A9DA9 /* HangmanView.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		DC30455522427132007DC727 /* HangmanGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanGame.swift; sourceTree = "<group>"; };
+		DC32E47C22538E6C002B70FF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DC904D7E22481545004A9DA9 /* CharacterExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExt.swift; sourceTree = "<group>"; };
 		DC904D8022481638004A9DA9 /* ViewControllerAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAnimations.swift; sourceTree = "<group>"; };
 		DC904D83224816D6004A9DA9 /* HangmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				DCF0DD70223E580200D488D1 /* LabelExt.swift */,
 				DC904D7E22481545004A9DA9 /* CharacterExt.swift */,
+				DC32E47C22538E6C002B70FF /* Colors.swift */,
 			);
 			path = Extra;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC780762239B04600B88602 /* ViewController.swift in Sources */,
+				DC32E47D22538E6C002B70FF /* Colors.swift in Sources */,
 				DC30455622427132007DC727 /* HangmanGame.swift in Sources */,
 				DC904D84224816D6004A9DA9 /* HangmanView.swift in Sources */,
 				DC904D8122481638004A9DA9 /* ViewControllerAnimations.swift in Sources */,
