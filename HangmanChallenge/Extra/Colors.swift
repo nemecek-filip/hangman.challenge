@@ -10,7 +10,7 @@ import UIKit
 
 extension UIColor {
     static var background: UIColor {
-        return UIColor(named: "BackgroundColor")!
+        return UIColor(named: "ThemeBackground")!
     }
     
     static var accent: UIColor {
