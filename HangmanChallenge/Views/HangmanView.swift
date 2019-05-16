@@ -66,6 +66,7 @@ class HangmanView: UIView {
             imageViewUpdate.alpha = 1
         }
         
+        // Flip image view to use so animation works
         imageViewToUse = imageViewToUse == firstImageView ? secondImageView : firstImageView
         
         animator.startAnimation()

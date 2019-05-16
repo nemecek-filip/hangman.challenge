@@ -46,8 +46,7 @@ class ViewController: UIViewController, HangmanGameDelegate {
         self.guessLabel.addCharacterSpacing(kernValue: 5)
     }
     
-    func hangmanGame(game: HangmanGame, didEnded result: HangmaGameResult) {
-        
+    func hangmanGame(game: HangmanGame, didEnd result: HangmaGameResult) {
         let title: String
         let message: String
         
@@ -101,10 +100,10 @@ class ViewController: UIViewController, HangmanGameDelegate {
         let letters = Character.alphabet
         
         let rangesStacksDict = [
-            0..<7   : firstButtonStack,
-            7..<13  : secondButtonStack,
-            13..<20 : thirdButtonStack,
-            20..<26 : fourthButtonStack
+            0  ..< 7   : firstButtonStack,
+            7  ..< 13  : secondButtonStack,
+            13 ..< 20  : thirdButtonStack,
+            20 ..< 26  : fourthButtonStack
         ]
         
         for rangeStack in rangesStacksDict {
@@ -116,22 +115,6 @@ class ViewController: UIViewController, HangmanGameDelegate {
         buttonsAnimators.forEach {
             $0.startAnimation()
         }
-        
-//        for i in 0..<7 {
-//            firstButtonStack.addArrangedSubview(createLetterButton(letter: letters[i]))
-//        }
-//
-//        for i in 7..<13 {
-//            secondButtonStack.addArrangedSubview(createLetterButton(letter: letters[i]))
-//        }
-        
-//        for i in 13..<20 {
-//            thirdButtonStack.addArrangedSubview(createLetterButton(letter: letters[i]))
-//        }
-//
-//        for i in 20..<26 {
-//            fourthButtonStack.addArrangedSubview(createLetterButton(letter: letters[i]))
-//        }
     }
     
     @objc func letterButtonTapped(_ sender: RoundedButton) {

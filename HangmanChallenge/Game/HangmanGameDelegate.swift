@@ -14,6 +14,6 @@ enum HangmaGameResult {
 }
 
 protocol HangmanGameDelegate: class {
-    func hangmanGame(game: HangmanGame, didEnded result: HangmaGameResult)
+    func hangmanGame(game: HangmanGame, didEnd result: HangmaGameResult)
     func hangmanGame(game: HangmanGame, didUpdateGuessText text: String)
 }

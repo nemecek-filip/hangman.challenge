@@ -10,11 +10,11 @@ import Foundation
 
 class HangmanGame {
     
-    var wordToGuess: String!
-    var currentGuessWord: String!
-    var guessedCharacters = Set<Character>()
+    private var wordToGuess: String!
+    private var currentGuessWord: String!
+    private var guessedCharacters = Set<Character>()
     
-    var wrongGuesses = 0
+    private var wrongGuesses = 0
     
     var delegate: HangmanGameDelegate?  
     
@@ -30,7 +30,6 @@ class HangmanGame {
     func guessCharacter(_ character: Character) -> Bool {
         
         if wordToGuess.contains(character) {
-            
             guessedCharacters.insert(character)
             
             rebuildCurrentGuessWord(with: character)
@@ -40,7 +39,7 @@ class HangmanGame {
             wrongGuesses += 1
             
             if wrongGuesses == 7 {
-                delegate?.hangmanGame(game: self, didEnded: .loss)
+                delegate?.hangmanGame(game: self, didEnd: .loss)
             }
             
             return false
@@ -65,7 +64,7 @@ class HangmanGame {
         delegate?.hangmanGame(game: self, didUpdateGuessText: newGuessWord)
         
         if !missingCharacters {
-            delegate?.hangmanGame(game: self, didEnded: .win)
+            delegate?.hangmanGame(game: self, didEnd: .win)
         }
     }
     
